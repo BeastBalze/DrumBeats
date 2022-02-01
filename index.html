@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrumBeats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="img">
+        <img src="https://www.clipartmax.com/png/full/90-900108_music-icon-music-png.png" alt="">
+    </div>
+<div class="main">
+    <div class="btn-cont">
+        <div class="btn" id="btn1">
+            <button class="button">Use Click</button>
+        </div>
+        <div class="btn" id="btn2">
+            <button class="button">Use Keyboard</button>
+        </div>
+    </div>
+    <!-- url for playing audio https://docs.google.com/uc?export=download&id={id} -->
+    <div class="container">
+        <div class="sound-cont" id="boom">
+            <h1 class="soundBoxTitle" id="boomLetter">A</h1>
+            <h4 class="soundBoxName">Boom</h4>
+            <audio src="boom.wav" id="audio-boom"></audio>
+        </div>
+
+        <div class="sound-cont" id="clap">
+            <h1 class="soundBoxTitle" id="clapLetter">S</h1>
+            <h4 class="soundBoxName">Clap</h4>
+            <audio src="clap.wav" id="audio-clap"></audio>
+        </div>
+
+        <div class="sound-cont" id="hihat">
+            <h1 class="soundBoxTitle" id="hihatLetter">D</h1>
+            <h4 class="soundBoxName">Hihat</h4>
+            <audio src="hihat.wav" id="audio-hihat"></audio>
+        </div>
+
+        <div class="sound-cont" id="kick">
+            <h1 class="soundBoxTitle" id="kickLetter">F</h1>
+            <h4 class="soundBoxName">Kick</h4>
+            <audio src="kick.wav" id="audio-kick"></audio>
+        </div>
+
+        <div class="sound-cont" id="openhat">
+            <h1 class="soundBoxTitle" id="openhatLetter">G</h1>
+            <h4 class="soundBoxName">Openhat</h4>
+            <audio src="openhat.wav" id="audio-openhat"></audio>
+        </div>
+
+        <div class="sound-cont" id="ride">
+            <h1 class="soundBoxTitle" id="rideLetter">H</h1>
+            <h4 class="soundBoxName">Ride</h4>
+            <audio src="ride.wav" id="audio-ride"></audio>
+        </div>
+
+        <div class="sound-cont" id="snare">
+            <h1 class="soundBoxTitle" id="snareLetter">J</h1>
+            <h4 class="soundBoxName">Snare</h4>
+            <audio src="snare.wav" id="audio-snare"></audio>
+        </div>
+
+        <div class="sound-cont" id="tink">
+            <h1 class="soundBoxTitle" id="tinkLetter">K</h1>
+            <h4 class="soundBoxName">Tink</h4>
+            <audio src="tink.wav" id="audio-tink"></audio>
+        </div>
+
+        <div class="sound-cont" id="tom">
+            <h1 class="soundBoxTitle" id="tomLetter">L</h1>
+            <h4 class="soundBoxName">Tom</h4>
+            <audio src="tom.wav" id="audio-tom"></audio>
+        </div>
+    </div>
+    <div class="opt-icon tooltip"> <span class="tooltiptext">Customize Keyboard</span> <button id="nav-icon"><i class="fas fa-bars"></i></button></div>
+    <div class="forms-cont forms-cont-hide" id="formCont">
+        <h1 class="forms-title">Customize Your Keyboard</h1>
+        <form action="post">
+            <h3>Select Sound</h3>
+            <input type="text" id="sound" placeholder="e.g. boom"> <br><br><br>
+            <h3>Choose Alphabhate</h3>
+            <input type="text" id="char" placeholder="A to Z">
+        </form>
+        <button id="submit">Change</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
